@@ -7,7 +7,7 @@ server: .FORCE
 	docker-compose up
 
 # start (or restart) the services in detached mode
-server-detached: .FORCE
+server-detached: 
 	docker-compose down || true;
 	docker-compose up -d
 
